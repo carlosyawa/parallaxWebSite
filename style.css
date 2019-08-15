@@ -1,0 +1,220 @@
+/* Logo*/
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+}
+
+
+/* NavBar */
+
+p {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    background: transparent;
+    justify-content: center;
+}
+
+header {
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+nav {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #0f110f;
+}
+
+.contenido {
+    padding-top: 80px;
+}
+
+
+/* Parallax */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.sec1 {
+    background: url('./images/descarga.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-sizing: cover;
+    background-position: center;
+}
+
+.sec2 {
+    background: url('./images/imagen2.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.sec3 {
+    background: url('./images/Arma.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.secText {
+    padding: 50px 100px;
+    height: auto;
+}
+
+.secText h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+}
+
+.secText p {
+    font-size: 18px;
+}
+
+
+/* Project */
+
+.contenedor {
+    width: 100%;
+    height: 150vh;
+    background: rgb(250, 249, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.row1,
+.row2,
+.row3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.contenedor>div div {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    margin: 5px;
+}
+
+.contenedor>div div span {
+    position: absolute;
+    color: rgb(32, 36, 37);
+    right: calc( 50% - (69.32px / 2));
+    top: calc( 50% - ( 18.5px / 2));
+    display: none;
+    font-size: 30px;
+}
+
+.contenedor>div div img {
+    width: 100%;
+    height: 100%;
+}
+
+.secText>div>div>div:hover span {
+    display: block;
+}
+
+.secText>div>div>div:hover img {
+    opacity: .5;
+}
+
+
+/*Contact */
+
+.contacto {
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto div {
+    margin-bottom: 15px;
+}
+
+.contacto input[type='text'],
+.contacto textarea {
+    padding: 7px 6px;
+    width: 294px;
+    border: 1px solid #CED5D7;
+    resize: none;
+    box-shadow: 0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+
+.contacto input[type='text']:focus,
+.contacto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #0f252b;
+}
+
+.contacto input[type='submit'] {
+    border: 1px solid #CED5D7;
+    box-shadow: 0 0 0 3px #EEF5F7;
+    margin-left: 78%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+    background: #e4f1f6;
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+}
+
+.contacto input[type='submit']:hover {
+    background: #ee390c;
+    background: -moz-linear-gradient(top, #3c5f66 0%, #234a5a 100%);
+    background: -webkit-linear-gradient(top, #092329 0%, #0e6283 100%);
+}
+
+.contacto input[type='submit']:active {
+    background: #cfe6ef;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+}
